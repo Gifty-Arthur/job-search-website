@@ -1,8 +1,10 @@
 import React from 'react'
+import Home from './components/Home/Home'
 
 const Homepage = () => {
   return (
-    <div className='text-bg-red text-9xl'> helloo
+    <div className='overflow-hidden'> 
+    <Home/>
       
     </div>
   )
