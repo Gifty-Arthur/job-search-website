@@ -21,6 +21,13 @@ const FeaturedJobs = () => {
           );
         })}
       </div>
+      <Link href="/job/alljobs">
+        <div className="text-center mt-[3rem]">
+          <button className="px-8 py-2 font-semibold hover:bg-blue-900 transition-all duration-300 bg-blue-700 rounded-lg text-white">
+            View All job
+          </button>
+        </div>
+      </Link>
     </div>
   );
 };
