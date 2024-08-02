@@ -5,8 +5,8 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className=" pt-[5rem] pb-[3rem]">
-      <div className="container flex flex-col items-center justify-center">
-        <div className="mx-auto w-[80%] flex  items-center justify-between lg:grid-cols gap-[2rem]">
+      <div className="w-[100%] h-[60vh] flex flex-col items-center justify-center">
+        <div className="mx-auto w-[80%]  flex  items-center justify-between lg:grid-cols gap-[2rem]">
           {/* content */}
           <div>
             <h1 className="text-28px sm:text-[35px] lg:text-[45px] xl:text-5xl text-[#05264e] leading-[3rem] lg:leading[4rem] font-extrabold">
