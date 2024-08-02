@@ -2,8 +2,13 @@ import React from 'react'
 import logo from "@/public/Images/logo .png"
 import Link from "next/link"
 import Image from "next/image"
+import { getServerSession } from 'next-auth'
+import { authOptions } from '@/auth'
+import User from '../Helper/User'
 
-const Nav = () => {
+const Nav = async () => {
+    const session =await getServerSession(authOptions);
+    console.log(session);
   return (
     <div className='h-[13vh] overflow-hidden shadow-md'>
         <div className='w-[90%] md:w-[80%] h-[100%] mx-auto flex items-center justify-between'>
@@ -15,12 +20,14 @@ const Nav = () => {
             </div>
             {/* button */}
             <div className='flex items-center space-x-4'>
-                <Link href="/signup">
+               {!session &&( <Link href="/signup">
                 <button className=' px-4 py-1.5 text-[14px] sm:text-[16px] sm:px-6 sm:py-2 bg-blue-600 font-semibold text-white rounded-lg 
                  hover:bg-blue-800 transition-all duration-300'>
                     Sing Up
                 </button>
                 </Link>
+            )}
+            {session && <User session={session}/>}
 
             </div>
 
