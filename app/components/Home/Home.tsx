@@ -1,14 +1,16 @@
-import React from 'react'
-import Hero from './Hero'
-import JobCategory from './JobCategory'
+import React from "react";
+import Hero from "./Hero";
+import JobCategory from "./JobCategory";
+import FeaturedJobs from "./FeaturedJobs";
 
 const Home = () => {
   return (
     <div>
-      <Hero/>
-      <JobCategory/>
+      <Hero />
+      <JobCategory />
+      <FeaturedJobs />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

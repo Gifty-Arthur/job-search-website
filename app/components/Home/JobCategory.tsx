@@ -11,7 +11,7 @@ const JobCategory = () => {
         subHeading="2020 jobs live-293 added today"
       />
 
-      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[4rem] gap-[3rem] items-center">
+      <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[4rem]  gap-4 items-center">
         <JobCategoryCard
           image="/images/icon1.png"
           category="Finance"

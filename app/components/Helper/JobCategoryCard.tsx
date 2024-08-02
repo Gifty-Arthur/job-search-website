@@ -13,9 +13,17 @@ const JobCategoryCard = ({ category, image, openPosition }: Props) => {
       className="p-4 border-2 cursor-pointer hover:scale-110 hover:sadow-sm transition-all 
     duration-300 border-gray-500 rounded-lg border-opacity-10"
     >
-      <div className="spiace-x-4 flex items-center">
+      <div className="spiace-x-4  flex flex-row gap-4">
         {/* image */}
         <Image src={image} alt="{category}" width={60} height={60} />
+
+        {/* content */}
+        <div>
+          <h1 className="text-[17px] font-semibold mb-[0.4rem]">{category}</h1>
+          <p className="text-[14px] text-black font-semibold text-opacity-50">
+            ({openPosition} open Position)
+          </p>
+        </div>
       </div>
     </div>
   );
