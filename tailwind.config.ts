@@ -11,19 +11,20 @@ const config: Config = {
       
 
     },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+        
+      },
+      center: true,
+  
+      },
   },
-  container: {
-    padding: {
-      DEFAULT: '1rem',
-      sm: '2rem',
-      lg: '4rem',
-      xl: '5rem',
-      '2xl': '6rem',
-      
-    },
-    center: true,
 
-    },
   plugins: [],
 };
 export default config;
